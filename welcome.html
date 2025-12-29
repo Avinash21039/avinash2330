@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Welcome 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="welcome-body">
+
+<div class="welcome-card">
+  <h1 class="welcome-title" id="username"></h1>
+  <p class="message">
+    Dear Vishali 💖,<br><br>
+
+    On your special day, I just want you to know how important you are to me.
+    You’ve been there in my smiles and my silence,
+    in my happiness and my hard days.<br><br>
+
+    Having a best friend like you is a blessing I’ll always be grateful for.
+    No matter where life takes us,
+    you’ll always have a special place in my heart 🤍<br><br>
+
+    <b>Happy Birthday Vishali 🎂✨</b><br>
+    Stay happy, stay strong, and stay the beautiful soul you are 🌸<br><br>
+
+    — With lots of love 💞<br>
+    <b>Bommaraveni Avinash</b>
+  </p>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+document.getElementById("username").innerText =
+  `BOMMARAVENI AVINASH welcomes ${name} 💖`;
+</script>
+
+</body>
+</html>
+s

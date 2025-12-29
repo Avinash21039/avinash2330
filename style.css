@@ -1,0 +1,134 @@
+/* ---------- COMMON ---------- */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- LOGIN PAGE ---------- */
+.login-body {
+  background: radial-gradient(
+    circle at top,
+    #ffb6c1,
+    #c084fc,
+    #6b21a8
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+  width: 90%;
+  max-width: 380px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(20px);
+  border-radius: 25px;
+  box-shadow: 0 0 60px rgba(255, 182, 193, 0.6);
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+.present {
+  font-size: 0.85rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.title {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 1.9rem;
+}
+
+.subtitle {
+  color: #fef3c7;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.85);
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg,#ff5fa2,#ff8acb);
+  color: white;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff9acb;
+}
+
+#status {
+  margin-top: 15px;
+  color: #fff;
+}
+
+/* ---------- WELCOME PAGE ---------- */
+.welcome-body {
+  background: radial-gradient(
+    circle at top,
+    #ffd6e8,
+    #e9b4ff,
+    #fef3c7
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-card {
+  width: 90%;
+  max-width: 420px;
+  padding: 35px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  box-shadow: 0 0 70px rgba(255,200,220,0.7);
+  text-align: center;
+  animation: fadeIn 2.5s ease;
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  color: #6b21a8;
+}
+
+.message {
+  color: #4a044e;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
